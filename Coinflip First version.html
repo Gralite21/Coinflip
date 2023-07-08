@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coin-Flip</title>
+
+</head>
+<body>
+    <p>Coin-Flip</p>
+    <p>Choose</p>
+
+    <button onclick="playGame('Heads')">Heads</button>
+    <button onclick="playGame('Tails')">Tails</button>
+
+<script>
+    let score={
+        Wins:0,
+        Losses:0
+    };
+    function playGame (guess){
+        const randomNumber = (Math.random());
+        let result = '';
+        let winOrLose = '';
+        if (randomNumber < 0.5) {
+            result = 'Heads' ;
+        } else{
+            result = 'Tails';
+        } if (guess===result){
+            winOrLose ='You Won!';
+            score.Wins++;
+        } else{
+            winOrLose = 'You Lost';
+            score.Losses++;
+        }
+        console.log(score);
+        console.log(result);
+
+        alert(`${result} was flipped. ${winOrLose}
+Wins:${score.Wins}
+Losses:${score.Losses}`);
+
+        if (score.Wins===0 && score.Losses===5){
+            alert('Not Your lucky Day');
+        }
+    }
+
+</script>
+
+</body>
+</html>
