@@ -1,0 +1,52 @@
+body{
+    font-family: Consolas, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbdbf6;
+}
+.screen{
+    width: 100vh;
+    height: 100vh;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbdec;
+}
+.choose{
+    font-size: 25px;
+    font-weight: bold;
+}
+.headsButton,
+.tailsButton
+{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    border:none;
+    font-family: Consolas,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #8585e3;
+    transition: padding 0.15s;
+}
+.tailsButton{
+    margin-left: 28px;
+}
+button:hover{
+    background-color: #5252d7;
+}
+button:active{
+
+}
+.yourResult{
+
+}
+.result{
+    font-size: 30px;
+    font-weight: bold;
+}
