@@ -32,7 +32,7 @@ body{
     font-size: 15px;
     font-weight: bold;
     background-color: #8585e3;
-    transition: padding 0.15s;
+    transition:1s;
 }
 .tailsButton{
     margin-left: 28px;
@@ -41,12 +41,15 @@ button:hover{
     background-color: #5252d7;
 }
 button:active{
-
+    background-color: white;
+    transition: 0s;
 }
-.yourResult{
-
-}
-.result{
-    font-size: 30px;
+.result,
+.coinSide{
+    font-size: 20px;
     font-weight: bold;
+}
+.invisible{
+    width: 0;
+    height: 0;
 }
