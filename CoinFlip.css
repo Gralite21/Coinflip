@@ -53,3 +53,6 @@ button:active{
     width: 0;
     height: 0;
 }
+.row{
+    height:55px ;
+}
